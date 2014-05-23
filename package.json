@@ -1,0 +1,22 @@
+{
+  "name": "mute-server",
+  "version": "0.0.7",
+  "description": "Server-side application creating a data-structure representing a text and initializing a network to allow clients to edit the text and broadcast theirs changes in real-time",
+  "main": "index.js",
+  "dependencies": {
+    "mute-structs": "*",
+    "mute-utils": "*"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "collaborative-edition",
+    "crdt",
+    "websocket",
+    "real-time"
+  ],
+  "author": "Matthieu Nicolas",
+  "license": "GPL"
+}
