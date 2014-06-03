@@ -1,11 +1,15 @@
 {
   "name": "mute-server",
-  "version": "0.0.7",
+  "version": "0.0.10",
   "description": "Server-side application creating a data-structure representing a text and initializing a network to allow clients to edit the text and broadcast theirs changes in real-time",
   "main": "index.js",
   "dependencies": {
     "mute-structs": "*",
     "mute-utils": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MatthieuNICOLAS/mute-server"
   },
   "devDependencies": {},
   "scripts": {
