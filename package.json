@@ -1,6 +1,6 @@
 {
   "name": "mute-server",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "Server-side application creating a data-structure representing a text and initializing a network to allow clients to edit the text and broadcast theirs changes in real-time",
   "main": "index.js",
   "dependencies": {
