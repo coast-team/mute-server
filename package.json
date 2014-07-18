@@ -1,6 +1,6 @@
 {
   "name": "mute-server",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Server-side application creating a data-structure representing a text and initializing a network to allow clients to edit the text and broadcast theirs changes in real-time",
   "main": "index.js",
   "dependencies": {
@@ -22,11 +22,22 @@
     "websocket",
     "real-time"
   ],
-  "author": "Matthieu Nicolas",
+  "author": {
+    "name": "Matthieu Nicolas"
+  },
   "licenses": [
     {
       "type": "GPLv3",
       "url": "http://www.gnu.org/licenses/gpl-3.0.txt"
     }
-  ]
+  ],
+  "readme": "### TODO: Présentation du module\n\n# Installation\n\n```\nnpm install mute-server\n```\n\nIf you want to use the socketIOAdapter provided in this module, you will need to install **socket.io** too:\n\n```\nnpm install socket.io\n```\n\n# Utilisation\n\n**In your app.js file:**\n\n```\nvar server = require('http').createServer(app),\nvar Coordinator = require('mute-server').Coordinator,\nvar SocketIOAdapter = require('mute-server').SocketIOAdapter;\n\nvar coordinator = new Coordinator();\nvar socketIOAdapter = new SocketIOAdapter(server, coordinator);\ncoordinator.setNetwork(socketIOAdapter);\n```\n\n### Network\n\nThe network architecture provided consist in an **central server** communicating with clients using WebSockets, using **socket.io**, and broadcasting the modifications made by users to the others.\nIf you don't want to use **socket.io**, you can easily **implement your own network architecture**, as long as you respect the **name of the events and the data structure** used to communicate between the **coordinator and the network adapter**.\n\n# See also\n\n* [**mute-demo**](https://github.com/MatthieuNICOLAS/mute-demo)\n* [**mute-client**](https://github.com/MatthieuNICOLAS/mute-client)\n* [**mute-structs**](https://github.com/MatthieuNICOLAS/mute-structs)\n* [**mute-utils**](https://github.com/MatthieuNICOLAS/mute-utils)\n\n## License\n\n**mute-server** is licensed under the GNU General Public License 3.\n\nThis program is free software: you can redistribute it and/or modify it under\nthe terms of the GNU General Public License as published by the Free Software\nFoundation, either version 3 of the License, or (at your option) any later\nversion.\n\nThis program is distributed in the hope that it will be useful, but WITHOUT\nANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS\nFOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License along with\nthis program. If not, see <http://www.gnu.org/licenses/>.\n\nThe documentation, tutorial and source code are intended as a community\nresource and you can basically use, copy and improve them however you want.\nIncluded works are subject to their respective licenses.",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/MatthieuNICOLAS/mute-server/issues"
+  },
+  "homepage": "https://github.com/MatthieuNICOLAS/mute-server",
+  "_id": "mute-server@0.1.0",
+  "_shasum": "957e9ff31a90a058cab81c9bae6c069741173b64",
+  "_from": "mute-server@0.1.0"
 }
