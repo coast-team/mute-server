@@ -4,7 +4,7 @@
   "description": "Server-side application creating a data-structure representing a text and initializing a network to allow clients to edit the text and broadcast theirs changes in real-time",
   "main": "index.js",
   "dependencies": {
-    "mongoose": "3.8.12",
+    "mongoose": "5.4.16",
     "mute-structs": "*",
     "mute-utils": "*"
   },
