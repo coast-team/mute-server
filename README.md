@@ -1,5 +1,7 @@
 ### TODO: Présentation du module
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/coast-team/mute-server.svg)](https://greenkeeper.io/)
+
 # Installation
 
 ```
